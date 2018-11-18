@@ -1,0 +1,78 @@
+@media (max-width: 1023px) {
+    #menu-container {
+        max-height: 50px;
+        width: 100%;
+        background: url(img/menu.png) no-repeat 99% 5px, rgba( 200, 200, 200, .9 );
+        z-index: 1000000;
+        overflow: hidden;
+        transition: max-height .5s;
+    }
+
+    #menu-container.active {
+        max-height: 100%;
+    }
+
+    #menu-container #logo {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #menu-container.active #logo {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #content-container {
+        min-height: 100%;
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    #menu-container #menu a {
+        text-align: left;
+
+    }
+
+    #menu-container #menu {
+        margin-bottom: 25px;
+    }
+
+    .row {
+        margin-left: 0;
+    }
+
+    .jumbotron p {
+        font-size: 1em;
+    }
+
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+
+    #introduction {
+        font-size: .9em;
+        position: static;
+    }
+
+    #services {
+        height: auto;
+    }
+
+    #map-cont {
+        display: block;
+    }
+    
+    #contact {
+        height: auto;
+    }
+    
+    #contact #map-cont > #map-canvas {
+        height: 500px;
+    }
+
+    #contact #map-cont > #contact-2 {
+        position: static;
+        display: table;
+        margin: 10px auto;
+    }
+}

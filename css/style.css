@@ -1,0 +1,405 @@
+@font-face { font-family: Simple; src: url('font/Simple Print.ttf'); }
+@font-face { font-family: Bebas; src: url('font/BebasNeue.otf'); }
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: opacity .5s linear;
+    background-position: center center;
+}
+
+#bg-layer {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: Bebas, sans-serif;
+    color: #fff;
+    text-shadow: 3px 3px 6px #000;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.box-shadow {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+
+#container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    height: 100%;
+}
+
+#menu-background {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+#menu-container {
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    -moz-box-shadow:    0 0 5px #111;
+    -webkit-box-shadow: 0 0 5px #111;
+    box-shadow:         0 0 5px #111;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    font-family: Bebas, sans-serif;
+}
+
+#menu-container #logo {
+    width: 100%;
+    transition: all .3s;
+}
+
+#menu-container #logo img {
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: block;
+}
+
+#menu-container #intro-short h1 {
+    text-align: center;
+    line-height: 15px;
+}
+
+#menu-container #menu {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    width: 100%;
+}
+
+#menu-container #menu li {
+    display: block;
+    width: 100%;
+}
+
+#menu-container #menu a {
+    transition: all ease .5s;
+    color: #222;
+    font-size: 30px;
+    border-radius: 0;
+    padding-right: 25px;
+    text-align: right;
+    display: block;
+    text-decoration: none;
+}
+
+#menu-container #menu a:hover {
+    background-color: #777;
+    padding-right: 35px;
+    color: white;
+}
+
+.jumbotron {
+    background: transparent;
+    color: #eaeaea;
+    font-family: Bebas, sans-serif;
+    font-size: 2em;
+    padding: 30px 0 0 0;
+}
+
+.jumbotron h1 {
+    font-size: 4em;
+    text-shadow: 3px 3px 6px #000;
+}
+
+.jumbotron p {
+    font-size: 2em;
+    text-shadow: 2px 2px 3px #000;
+}
+
+#content-container {
+    height: 100%;
+    margin-left: 250px;
+    width: 88%;
+}
+
+#content-container section {
+    min-height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#introduction {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.affix-top,.affix{
+    position: static;
+}
+
+@media (min-width: 640px) {
+    #menu-container.affix-top {
+        position: static;
+        width:228px;
+    }
+
+    #menu-container.affix {
+        position: fixed;
+        width:228px;
+    }
+}
+
+#services {
+    height: 100%;
+}
+
+#services .price-list {
+    width: 100%;
+    color: #333;
+    background-color: rgba( 255, 255, 255, .8 );
+}
+
+#services .price-list tr {
+    border: 1px solid #bababa;
+}
+
+#services .price-list tr td:not(last-child), #services .price-list tr th:not(last-child) {
+    border-right: 1px solid #d1d1d1;
+}
+
+#services .price-list tr td, #services .price-list tr th {
+    padding: 5px;
+}
+
+#services .price-list th {
+    text-align: center;
+}
+
+#services .price-list tr:nth-child(odd) {
+    border-bottom: 1px solid #d1d1d1;
+    font-weight: bold;
+}
+
+#services .price-list tr:nth-child(even) > td:first-child {
+    font-style: italic;
+    padding: 5px 5px 5px 10px;
+}
+
+#services .price-list tr:hover td {
+    background-color: #bbb;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hiddenbrant {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tab-content {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transition: all 0.5s ease-out;
+}
+
+.tabs {
+    position: relative;
+}
+
+.tabs > .tab {
+    float: left;
+}
+
+.tabs > .tab > a.title {
+    padding: 10px 20px;
+    color: #fff;
+    font-family: Bebas, sans-serif;
+    cursor: pointer;
+    font-size: 1.4em;
+}
+
+.tabs > .tab > a.title:first-child {
+    padding: 10px 20px 10px 0;
+}
+
+.tabs > .tab > a.title:last-child {
+    padding: 0 20px 10px 10px;
+}
+
+.tabs > .tab > a.title:hover {
+    text-decoration: none;
+}
+
+.gallery {
+    float: left;
+    position: relative;
+    border: 2px white solid;
+    margin: 0 3px 3px 0;
+    background-size: cover;
+    width: 140px;
+    height: 200px;
+    background-position: 50% 50%;
+    transition: ease all .5s;
+}
+
+.gallery:hover {
+}
+
+.gallery .layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    background-image: url(img/magnifier.png);
+    background-size: 0;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: ease all 0.5s;
+}
+
+.gallery .layer:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(img/magnifier.png);
+    background-size: 30%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+#contact #contact-2 {
+    background-color: rgba( 0, 0, 0, .9 );
+    color: white;
+    margin-bottom: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-content: center;
+}
+
+#contact #contact-text {
+    padding: 10px;
+}
+
+#contact > #contact-2 > .fb-like-box {
+    float: right;
+}
+
+#contact > #contact-2 > div {
+    float: left;
+}
+
+#contact .boxy {
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+#contact #map-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+#contact #map-canvas {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.fb-page {
+    display: flex !important;
+    align-items: center;
+}
+
+#partners img {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    width: 200px;
+}
+
+#partners a {
+	color: white;
+    font-size: 2em;
+    font-family: Bebas, sans-serif;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 12392834;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup > .content {
+    margin: 0 auto;
+    height: 95%;
+    position: relative;
+}
+
+.popup > .content img {
+    height: 100%;
+}
+
+.popup > .content > .close-popup {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}

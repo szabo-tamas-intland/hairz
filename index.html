@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html ng-app="hairz">
+
+<head>
+    <meta charset="utf-8" />
+	<title>Varga Zoltán - A budapesti női-férfi fodrász és borbély</title>
+    <meta name="keywords" content="Budapest, Varga Zoltán, női, férfi, fodrász, fodrászat, borbély, fotózás, borotválás, keratin, hajegyenesítés, kezelés, haj, hajvágás" />
+    <meta name="description" content="Zotya vagyok! Megnyírlak! Ha egy minőségi borotválásra, hajvágásra, festésre vagy csak egy jó storyra vágysz, ugorj be hozzám." />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="canonical" href="http://hairz.hu/" />
+    <meta property="og:url" content="http://hairz.hu/" />
+    <meta property="og:image" content="http://hairz.hu/css/img/bg/3.jpg" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Kezdőlap - Varga Zoltán fodrász, borbély Budapest" />
+    <meta property="og:site_name" content="Varga Zoltán fodrász, borbély Budapest" />
+    <meta name="google-site-verification" content="ZS6qLZ0t4Ga4dMaFYAIl6NbNjkoVCmgnPXi6XDj-gUQ" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/fancybox/dist/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+</head>
+
+<body ng-controller="HairzController">
+    <div id="fb-root"></div>
+    <div class="bg" style="background-image: url(css/img/bg/1.jpg);"></div>
+    <div class="bg" style="background-image: url(css/img/bg/2.jpg);"></div>
+    <div class="bg" style="background-image: url(css/img/bg/3.jpg);"></div>
+    <div id="bg-layer"></div>
+    <div class="container-fluid" id="container">
+        <div id="content">
+            <div id="menu-container">
+                <div id="logo">
+                    <img src="css/img/logo.png" />
+                </div>
+                <div id="intro-short">
+                </div>
+                <ul id="menu" class="nav nav-sidebar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div id="content-container" class="">
+                <section id="home">
+                    <div class="jumbotron">
+                        <h1>Zotya vagyok!</h1>
+                        <p>megnyírlak!</p>
+                    </div>
+                    <div id="introduction" class="box-shadow">
+                        <p style="font-style: italic; font-weight: bold;">
+                            "Nekem a fodrászat egyben a hobbim is, nem érzem azt, hogy alkotás közben dolgozom. Mindig a legjobbat kívánom adni szakmai tudásomból a vendégeimnek. Fontos számomra a folyamatos fejlődés, nem másokhoz, hanem önmagamhoz képest."
+                        </p>
+                        <p style="text-align: justify;">
+                            Varga Zoltán a Ghair Budapest fodrász-borbélya vagyok. Több mint hat éve munkálkodom a szalonban női és férfi fodrászként, ahol a szakmát is tanulhattam. Rendszeres képzésekkel és a legújabb trendeknek megfelelő újdonságokkal igyekszem fejlődni és szolgáltatásaim körét bővíteni. Egyedülálló szolgáltatásaim közé tartozik az Első pesti borbély és a Ghair Budapest közös kezdeményezésével újraélesztett, Magyarországon kuriózumnak számító hagyományos borotválás, amit már több mint három éve igényelhetnek nálam, akár ajándékba és a mindennapokra egyaránt. Kiemelt szolgáltatásom a keratinos hajegyenesítés, ami feltölti, és ahogy neve is mutatja, egyenesíti a hajat. Továbbá szolgáltatásaim között szerepel az általános fodrászati tevékenységek mellett az ammónia mentes hajfestés, különféle hajfeltöltő kezelések, amelyeket a legkiválóbb minőségű termékekkel végzek. Tapasztalattal rendelkezem különböző fotózások, szépségversenyek, bemutatók, rendezvények fodrász és háttérmunkálataiban.
+                        </p>
+                        <p style="text-align: justify;">
+                            Bárminemű kérdéssel fordulj hozzám bizalommal. Tudásom legjavával adok tanácsot és szolgálom ki a vendégeimet.
+                        </p>
+                        <p style="font-style: italic; font-weight: bold;">
+                            V. Zoli
+                        </p>
+                    </div>
+                </section>
+                <section id="services">
+                    <h2>Services</h2>
+
+                    <div class="tabs">
+                        <div class="tab">
+                            <a class="title">Női hajvágás</a>
+                            <div class="tab-content">
+                                <table class="price-list">
+                                    <tr>
+                                        <th colspan="3">Női hajvágás</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Szolgáltatás</th>
+                                        <th colspan="2">Fogyasztói ár</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Női hajvágás</td>
+                                        <td>rövid</td>
+                                        <td>4800 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>5600 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Női szárítás</td>
+                                        <td>rövid</td>
+                                        <td>2400 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>3000 Ft</td>
+                                    </tr>
+								</table>
+							</div>
+						</div>
+                        <div class="tab">
+                            <a class="title">Dauer és konty</a>
+                            <div class="tab-content">
+                                <table class="price-list">
+                                    <tr>
+                                        <th colspan="3">Dauer és konty</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Szolgáltatás</th>
+                                        <th colspan="2">Fogyasztói ár</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Dauer és hajvágás</td>
+                                        <td>rövid</td>
+                                        <td>11000 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>13200 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dauer csak szárítással</td>
+                                        <td>rövid</td>
+                                        <td>8000 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>10000 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kontytűzés mosás nélkül</td>
+                                        <td>rövid</td>
+                                        <td>3200 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>3200 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kontytűzés szárítással</td>
+                                        <td>rövid</td>
+                                        <td>4600 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>4600 Ft</td>
+                                    </tr>
+								</table>
+							</div>
+						</div>
+                        <div class="tab">
+                            <a class="title">Férfi hajvágás</a>
+                            <div class="tab-content">
+                                <table class="price-list">
+                                    <tr>
+                                        <th colspan="3">Férfi hajvágás</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Szolgáltatás</th>
+                                        <th colspan="2">Fogyasztói ár</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Férfi hajvágás</td>
+                                        <td>rövid</td>
+                                        <td>3000 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>3600 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Férfi gépi hajvágás</td>
+                                        <td>rövid</td>
+                                        <td>2100 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>2100 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Férfi szárítás</td>
+                                        <td>rövid</td>
+                                        <td>1600 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>1600 Ft</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <a class="title">Gyermek hajvágás</a>
+                            <div class="tab-content">
+                                <table class="price-list">
+                                    <tr>
+                                        <th colspan="3">Gyermek hajvágás</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Szolgáltatás</th>
+                                        <th colspan="2">Fogyasztói ár</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Gyermek hajvágás</td>
+                                        <td>rövid</td>
+                                        <td>2100 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>2400 Ft</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <a class="title">Festés</a>
+                            <div class="tab-content">
+                                <table class="price-list">
+                                    <tr>
+                                        <th colspan="5">Festés és Melírozás</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Szolgáltatás</th>
+                                        <th colspan="2">Alapár</th>
+                                        <th>Anyagköltség</th>
+                                        <th>Várható ár</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Tőfestés csak szárítással</td>
+                                        <td>rövid</td>
+                                        <td>4600 Ft</td>
+                                        <td>50 Ft/g</td>
+                                        <td>6100 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>5200 Ft</td>
+                                        <td>50 Ft/g</td>
+                                        <td>6700 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teljes festés csak szárítással</td>
+                                        <td>rövid</td>
+                                        <td>5200 Ft</td>
+                                        <td>50 Ft/g</td>
+                                        <td>7200 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>5900 Ft</td>
+                                        <td>50 Ft/g</td>
+                                        <td>8400 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tőfestés hajvágással és szárítással</td>
+                                        <td>rövid</td>
+                                        <td>8400 Ft</td>
+                                        <td>50 Ft/g</td>
+                                        <td>10400 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>9100 Ft</td>
+                                        <td>50 Ft/g</td>
+                                        <td>11600 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teljes festés hajvágással és szárítással</td>
+                                        <td>rövid</td>
+                                        <td>7600 Ft</td>
+                                        <td>50 Ft/g</td>
+                                        <td>10400 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>9800 Ft</td>
+                                        <td>50 Ft/g</td>
+                                        <td>11600 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Melír csak szárítással</td>
+                                        <td>rövid</td>
+                                        <td>4600 Ft</td>
+                                        <td>100 Ft/tincs</td>
+                                        <td>5100 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>5200 Ft</td>
+                                        <td>100 Ft/tincs</td>
+                                        <td>7000 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Melír és tőfestés szárítással</td>
+                                        <td>rövid</td>
+                                        <td>5200 Ft</td>
+                                        <td>100 Ft/tincs + 50 Ft/g festék</td>
+                                        <td>7700 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>5900 Ft</td>
+                                        <td>120 Ft/tincs + 50 Ft/g festék</td>
+                                        <td>8700 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Melír és teljes festés szárítással</td>
+                                        <td>rövid</td>
+                                        <td>5200 Ft</td>
+                                        <td>100 Ft/tincs + 50 Ft/g festék</td>
+                                        <td>8700 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>5900 Ft</td>
+                                        <td>100 Ft/tincs + 50 Ft/g festék</td>
+                                        <td>10200 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Melír és hajvágás szárítással</td>
+                                        <td>rövid</td>
+                                        <td>4500 Ft</td>
+                                        <td>100 Ft/tincs</td>
+                                        <td>4500 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>5000 Ft</td>
+                                        <td>100 Ft/tincs</td>
+                                        <td>5000 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tőfestés, melír és hajvágás szárítással</td>
+                                        <td>rövid</td>
+                                        <td>7600 Ft</td>
+                                        <td>100 Ft/tincs + 50 Ft/g festék</td>
+                                        <td>10600 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>8400 Ft</td>
+                                        <td>100 Ft/tincs + 50 Ft/g festék</td>
+                                        <td>11800 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teljes festés, melír és hajvágás szárítással</td>
+                                        <td>rövid</td>
+                                        <td>8400 Ft</td>
+                                        <td>100 Ft/tincs + 50 Ft/g festék</td>
+                                        <td>11900 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>hosszú</td>
+                                        <td>9100 Ft</td>
+                                        <td>100 Ft/tincs + 50 Ft/g festék</td>
+                                        <td>13400 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Radír</td>
+                                        <td>hosszú</td>
+                                        <td>2000 Ft</td>
+										<td></td>
+										<td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>rövid</td>
+                                        <td>3000 Ft</td>
+										<td></td>
+										<td></td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <a class="title">HAJKEZELÉSEK</a>
+                            <div class="tab-content">
+                                <table class="price-list">
+                                    <tr>
+                                        <th colspan="2">HAJKEZELÉSEK</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="padding: 0"></th>
+                                    </tr>
+                                    <tr>
+										<td>BRAZIL, KAKAÓS, KERATINOS TARTÓS HAJEGYENESÍTŐ KEZELÉS</td>
+                                        <td>300 Ft/ml</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bond Ultim8 szalon hajkezelés, szárítással</td>
+                                        <td>7000 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bond Ultim8 expressz hajkezelés, szárítással</td>
+                                        <td>5000 Ft</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <a class="title">Borbély</a>
+                            <div class="tab-content">
+                                <table class="price-list">
+                                    <tr>
+                                        <th colspan="3">BORBÉLY SZOLGÁLTATÁSOK</th>
+                                    </tr>
+                                    <tr>
+                                        <th style="padding: 0"></th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Szakáll igazítás</td>
+                                        <td>800-2500 Ft</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr>
+                                        <td>Borotválás</td>
+                                        <td>35 perc</td>
+                                        <td>3500 Ft</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>45 perc</td>
+                                        <td>4500 Ft</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section id="gallery">
+                    <h2>Gallery</h2>
+                    <div class="tabs">
+
+                        <div class="tab" ng-repeat="(key, value) in galleries">
+                            <a class="title">{{value.name}}</a>
+                            <div class="tab-content" ng-init="i = 10000">
+                                <div ng-repeat="file in gallery[value.id]" ng-init="i = i - 1">
+                                    <a
+                                            class="gallery box-shadow"
+                                            rel="group{{key}}"
+                                            href="{{file}}"
+                                            data-alt="{{file}}"
+                                            style="background-image: url({{file}});">
+
+                                        <div class="layer"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <div class="clear"></div>
+
+                <section id="partners">
+                    <h2>Partners</h2>
+                    <a href="http://ravenfactories.com/" target="_blank">
+                        <img src="css/img/ravenfactories.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/masszazstothrichardtol/" target="_blank">
+                        Masszázs Tóth Richárdtól
+                    </a>
+                </section>
+
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <div id="map-cont">
+                        <div id="map-canvas" class="boxy"></div>
+                        <div id="contact-2">
+                            <div class="fb-page" data-href="https://www.facebook.com/VargaZoltanfodraszborbely" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/VargaZoltanfodraszborbely"><a href="https://www.facebook.com/VargaZoltanfodraszborbely">Varga Zoltán (fodrász,borbély)</a></blockquote></div></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <img src="css/img/bg/1.jpg" class="hidden" alt="Varga Zoltán, fodrász-borbély Budapest" />
+        <img src="css/img/bg/2.jpg" class="hidden" alt="Varga Zoltán, fodrász-borbély Budapest" />
+        <img src="css/img/bg/3.jpg" class="hidden" alt="Varga Zoltán, fodrász-borbély Budapest" />
+    </div>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyAef-TiYqKF4H7qAwl_BeLGwREDzlC7LNM"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/fancybox/dist/js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+
+</html>
